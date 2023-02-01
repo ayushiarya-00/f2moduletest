@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  text-align:center;
+}
+
+button{
+  cursor:pointer;
+}
+
+button:disabled{
+  cursor:not-allowed;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  height: 100%;
+  gap: 16px;
+  align-items: center;
+}
+.feature-button-container{
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  justify-content: center;
+}
+.feature-button-container>button{
+  width: 160px;
+  height: 160px;
+  background: transparent;
+  border-radius: 12px;
+  padding: 8px;
+  
+}
+.feature-button-container>button img{
+  width: 100%;
+  height: 100%;
+  pointer-events:none
+}
+.feature-view-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.form-container{
+  width: 80%;
+}
+
+#registration-form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#registration-form input,button{
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#registration-form button{
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.feature-view-container .detail-dice-container {
+  display: flex;
+  gap:16px;
+  width:70%;
+}
+
+.feature-view-container .detail-dice-container div{
+  width: 50%;
+}
+
+.feature-view-container .detail-dice-container .dice{
+  display: flex;
+  gap:16px;
+}
+
+#dice-button{
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border-radius:8px;
+}
+
+#dice-button img{
+  width: 100%;
+  height: 100%;
+}
+
+.dice-results{
+  padding:8px;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  width: max-content;
+  height: max-content;
+}
