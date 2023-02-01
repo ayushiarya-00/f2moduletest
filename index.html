@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="main-container">
+    <div class="feature-button-container">
+      <button class="image-container" id="form-button">
+        <img src="registration.png">
+      </button>
+      <button class="image-container" id="display-details">
+        <img src="detail.png">
+      </button>
+      <button class="image-container" id="dice-roll">
+        <img src="dice.jpg">
+      </button>
+      <button class="image-container" id="coupon-button">
+        <img src="coupon.png">
+      </button>
+    </div>
+
+    <div class="feature-view-container">
+      <div class="form-container" id="form-container" style="display: none">
+        <form id="registration-form">
+          <h2>Registeration Form</h2>
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="username" placeholder="Username" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="detail-dice-container" class="detail-dice-container" style="display: none">
+        <div id="display-container" class="detail">
+          <p id="display-name"></p>
+          <p id="display-username"></p>
+        </div>
+
+        <div class="dice" >
+          <button id="dice-button" style="display: none">
+            <img src="i3.jpg" alt="dice" />
+          </button>
+          <div id="number-container">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="couponGenerator" style="display: none">
+        <h2>Congratulations! Here is Your Coupon Code</h2>
+        <h1 id="coupon"></h1>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+
+</html>
