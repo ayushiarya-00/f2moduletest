@@ -77,20 +77,19 @@ diceButton.onclick = () => {
 
     if (numbers.length === 3) {
       let sum = 0;
+      diceRollAttemptCount++;
       if (diceRollAttemptCount < 2) {
-        
         for (let i = 0; i < numbers.length; i++) {
           sum += numbers[i];
         }
         
-        if (sum <= 100) {
+        if (sum <= 10) {
           requestAnimationFrame(() => {
             setTimeout(() => {
               alert("Your sum is less than or equal 10, You can try one more time");
             });
           });
           numbers.length = 0;
-          diceRollAttemptCount++;
         }
         else {
           requestAnimationFrame(() => {
@@ -102,7 +101,6 @@ diceButton.onclick = () => {
           rollDiceButton.disabled = true 
           diceRollAttemptCount=0
         }
-        
       }
       else {
         requestAnimationFrame(() => {
@@ -112,7 +110,6 @@ diceButton.onclick = () => {
         });
         diceRollAttemptCount=0
       }
-      
     }
   }
 }
